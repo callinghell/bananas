@@ -94,7 +94,7 @@ p2{
 		opacity: 0;
 		translate: 20% 0vh;
 	}
-	35% {
+	55% {
 		opacity: 1;
 		translate: 10% 0vh;
 	}
@@ -139,13 +139,16 @@ header {
 }
 a {
     text-decoration: none;
-    color: #FFE100;
-	text-align: center;
+    color: #FFE100;	
 }
-a:hover{
+header .vin a:hover{
 	color: #FF4AC1;
 	animation: scale .4s  ease-in-out alternate both;	
 }
+a:hover{
+	color: #FF4AC1;	
+}
+
 #bg1  {
     background-image: url(imagenes/portada1.jpg);
     background-repeat: no-repeat;
@@ -170,7 +173,7 @@ a:hover{
     border-radius: 30px;
     border: medium solid #000000;
 	padding: 0.5vh 3%;
-    animation: moverX 6s alternate  both;
+    animation: moverX 4s alternate  both;
 }
 #cont1sec1{
     width: 55%;
@@ -178,13 +181,12 @@ a:hover{
 	display:flex;
 	flex-direction: column;
 	row-gap: 30px;
-	animation: moverYright 3s alternate 1s both;    
+	animation: moverYright 2s alternate 1.5s both;    
 }
-
 #cont1sec2{
     width: 45%;
     height: auto;
-	animation: moverYright 3s alternate 1s  both;
+	animation: moverYright 2s alternate 1.5s  both;
 }
 #contenedor2 {
     width: 100%;
@@ -203,7 +205,7 @@ a:hover{
 	row-gap: 3.5vh;
 	animation: moverYright  alternate ease-out both;
 	animation-timeline: view();
-    animation-range: entry 40% cover 75%;
+    animation-range: entry 30% cover 55%;
 }
 #contenedor3{
     background-image: url(imagenes/ohh.jpg);
@@ -233,7 +235,9 @@ a:hover{
 	grid-gap: 1vh;
 	text-align: center;
 	row-gap: 2%; 
+	
 }
+
 .fact:nth-child(1){
 	grid-column: 1/ 2;
 	grid-row: 1/ 2; 
@@ -284,6 +288,7 @@ a:hover{
 	width: 33.3333%;
 	heigth: 100vh;	
 }
+
 .colombia:nth-child(1){
 	animation: moverX alternate cubic-bezier(0.16, 0.59, 0.66, 0.07) both;
 	animation-timeline: view();
@@ -404,6 +409,10 @@ footer {
 	background-color: black;
 	color: #FFE100;
 }
+.ft .icons a:hover{
+	color: #FF4AC1;
+	animation: scale .4s  ease-in-out alternate both;
+}
 .ft:nth-child(3){
 	display:flex;
 	flex-direction: column;
@@ -421,13 +430,14 @@ footer {
 	color: #FFE100;
 }
 
+
 /*responsive 900px Y 680px*/
 @media (max-width:900px){
 body{
  font-size: 14px;
 }
 header{
-	padding: 2vh 1%;
+	padding: 2vh 3%;
 	height: 7vh;
 }
 .vin{
@@ -435,18 +445,18 @@ header{
 }
 #bg1{
     height: 90vh;
-	padding-left: 1%;
-	padding-right: 1%;	
+	padding-left: 3%;
+	padding-right: 3%;	
  }
 #contenedor3{
-	padding-left: 1%;
-	padding-right: 1%;
+	padding-left: 3%;
+	padding-right: 3%;
 	padding-top: 6vh;
 	padding-bottom: 5vh;
 	grid-gap: 1%;	
 }
 #contenedor4 {
-	padding: 3vh 1%;
+	padding: 3vh 3%;
 	column-gap: 3%;
 }
 .colombia:nth-child(1){
@@ -459,14 +469,14 @@ header{
 	width: 27%;
 }
 #contenedor5{
-    padding: 0 1%;
+    padding: 0 3%;
 	padding-top: 5vh;
 	padding-bottom: 5vh; 
 	grid-gap: 10px;
 }	
 footer {
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .ft:nth-child(3){
 	row-gap: 8px;
@@ -485,7 +495,7 @@ body{
 }
 header{
 	flex-direction: column;
-	padding: 1vh 2%;
+	padding: 1vh 5%;
 	height: 15vh;
 	justify-content: center;
 	row-gap:3vh ;
