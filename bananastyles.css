@@ -434,18 +434,18 @@ header{
 }
 #bg1{
     height: 90vh;
-	padding-left: 5%;
-	padding-right: 5%;	
+	padding-left: 3%;
+	padding-right: 3%;	
  }
 #contenedor3{
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 3%;
+	padding-right: 3%;
 	padding-top: 6vh;
 	padding-bottom: 5vh;
 	grid-gap: 1%;	
 }
 #contenedor4 {
-	padding: 3vh 4%;
+	padding: 3vh 3%;
 	column-gap: 3%;
 }
 .colombia:nth-child(1){
@@ -458,14 +458,14 @@ header{
 	width: 27%;
 }
 #contenedor5{
-    padding: 0 5%;
+    padding: 0 3%;
 	padding-top: 5vh;
 	padding-bottom: 5vh; 
 	grid-gap: 10px;
 }	
 footer {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .ft:nth-child(3){
 	row-gap: 8px;
@@ -484,7 +484,7 @@ body{
 }
 header{
 	flex-direction: column;
-	padding: 1vh 5%;
+	padding: 1vh 2%;
 	height: 15vh;
 	justify-content: center;
 	row-gap:3vh ;
